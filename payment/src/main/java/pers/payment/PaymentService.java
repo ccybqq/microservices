@@ -17,6 +17,6 @@ public class PaymentService {
     }
 
     public String processPayment() {
-        return "Success";
+        return "Fully Paid";
     }
 }

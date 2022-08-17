@@ -1,0 +1,19 @@
+server:
+  port: 8079
+hystrix:
+  dashboard:
+    proxyStreamAllowList: "*"
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      enabled: true
+      show-details: always
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl.defaultZone: http://localhost:8081/eureka

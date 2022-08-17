@@ -11,12 +11,12 @@ spring:
   application:
     name: PAYMENT-SERVICE
 server:
-  port: 8082
+  port: 8084
 eureka:
   client:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://localhost:8083/eureka/
+      defaultZone: http://localhost:8081/eureka/
   instance:
     hostname: localhost

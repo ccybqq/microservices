@@ -5,14 +5,16 @@ import order.trans.TransactionResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/order")
 public class OrderController {
     @Autowired
     private OrderService orderService;
 
-    @PostMapping("/order/place")
+    @PostMapping("/place")
     public TransactionResponse placeOrder(@RequestBody TransactionRequest transactionRequest) {
         return orderService.place(transactionRequest);
     }
