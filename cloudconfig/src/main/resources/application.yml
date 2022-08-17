@@ -10,9 +10,9 @@ server:
   port: 8078
 eureka:
   client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
       defaultZone: http://localhost:8081/eureka/
   instance:
     hostname: localhost
